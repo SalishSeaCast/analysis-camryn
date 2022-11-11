@@ -20,10 +20,12 @@ channels:
 dependencies:
   - arrow
   - bottleneck
+  - click
   - cliff
   - cmocean
   - coverage
   - dask
+  - flox
   - f90nml
   - gsw
   - ipdb
@@ -44,9 +46,11 @@ dependencies:
   - pyyaml
   - requests
   - retrying
+  - rich
   - scipy
   - sphinx
   - sphinx_rtd_theme
+  - structlog
   - tqdm
   - xarray
   
