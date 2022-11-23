@@ -1,0 +1,30 @@
+# Query: ocean/cstang/MOAD/analysis-camryn/analysis-camryn/.yaml
+# ContextLines: 1
+#reshapr extract processing configuration for daily-averaged
+# salinity fields in Salish Sea
+
+dataset:
+  model profile: SalishSeaCast-201905.yaml
+  time base: day
+  variables group: physics tracers
+
+dask cluster: salish_cluster.yaml
+
+start date: 2020-01-01
+end date: 2021-01-01
+
+extract variables:
+  - vosaline
+
+selection:
+  time interval: 1
+  depth:
+    depth min: 25
+    depth max: 26
+
+
+extracted dataset:
+  name: SalishSeaCast_daily_salinity_test_70m_2020
+  description: Daily extracted from SalishSeaCast v201905 hindcast
+  dest dir: /ocean/cstang
+  dest dir: /ocean/cstang
