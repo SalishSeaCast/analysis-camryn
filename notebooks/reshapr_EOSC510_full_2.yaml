@@ -10,7 +10,7 @@ dataset:
 
 dask cluster: salish_cluster.yaml
 
-start date: 2021-01-01
+start date: 2018-01-01
 end date: 2022-01-01
 
 extract variables:
@@ -19,12 +19,11 @@ extract variables:
 selection:
   time interval: 1
   depth:
-    depth min: 27
+    depth min: 24
     depth max: 28
 
 
 extracted dataset:
-  name: SalishSeaCast_daily_salinity_test_110m
+  name: SalishSeaCast_daily_salinity_test_full_2
   description: Daily extracted from SalishSeaCast v201905 hindcast
-  dest dir: /ocean/cstang
-  dest dir: /ocean/cstang
+  dest dir: /ocean/cstang/
